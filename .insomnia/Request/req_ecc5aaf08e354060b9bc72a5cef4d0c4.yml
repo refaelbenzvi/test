@@ -1,0 +1,72 @@
+_id: req_ecc5aaf08e354060b9bc72a5cef4d0c4
+type: Request
+parentId: fld_4ab10c4fffe54bff98fa5a3387b226be
+modified: 1693486182077
+created: 1693486182077
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %} "
+name: search
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tabName": "{% request 'folder', '', 0 %}",
+    	"fields": [
+    		"id",
+    		"firstName",
+    		"lastName",
+    		"organization",
+    		"brand",
+    		"division",
+    		"group",
+    		"team",
+    		"agent",
+    		"exAgent",
+    		"language",
+    		"status",
+    		"level",
+    		"verified",
+    		"notes",
+    		"country",
+    		"state",
+    		"city",
+    		"mainAddress",
+    		"additionalAddress",
+    		"zipCode",
+    		"email",
+    		"phones",
+    		"birthDate",
+    		"termsConfirmed",
+    		"createdDate"
+    	],
+    	"filters": [
+    		{# example: { "id": {"mode": "EQ",	"value": [	"3"] } }  #}
+    	],
+    	"offset": 0,
+    	"limit": 20,
+    	"orderBy": {
+    		"id": "DESC"
+    	}
+    }
+parameters: []
+headers:
+  - id: pair_a65abd735f85495ea393b42fed401788
+    name: Content-Type
+    value: application/json
+  - description: ""
+    disabled: false
+    id: pair_6e51897ba81746a187c43c41e50c65cb
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 200
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

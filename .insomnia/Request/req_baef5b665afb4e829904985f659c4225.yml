@@ -1,0 +1,56 @@
+_id: req_baef5b665afb4e829904985f659c4225
+type: Request
+parentId: fld_4ab10c4fffe54bff98fa5a3387b226be
+modified: 1693486182087
+created: 1693486182087
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: routeLead
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"firstName": "John",
+    	"lastName": "Doe",
+    	"brands": 1,
+    	"team": 1,
+    	"language": "ab",
+    	"email": "emails@email.com",
+    	"phones": [
+    		{
+    			"name": "John",
+    			"phone": "4242412442"
+    		}
+    	],
+    	"address": {
+    		"city": "Vårdö", {# *required! #} 
+    		"state": null,
+    		"country": "AX", {# *required! #}
+    		"zipCode": "44457745", {# *required! #}
+    		"mainAddress": "Address",
+    		"additionalAddress": null
+    	},
+    	"age": 34,
+    	"transactions": 0
+    }
+parameters: []
+headers:
+  - id: pair_424005f62fff4c51be20d617ca5ca562
+    name: Content-Type
+    value: application/json
+  - description: ""
+    id: pair_9b41e53c1c3d418fbeba71045dbead5c
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 325
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,38 @@
+_id: req_8ccffa83d9f54270a525a8d79764a9b9
+type: Request
+parentId: fld_278538a495094973b222e19a353c5703
+modified: 1693486182269
+created: 1693486182269
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getBrandsLayoutsDisplayListByBrand
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"brand": 1
+    }
+parameters: []
+headers:
+  - id: pair_16adcced39aa46c5a5d19e265d41782c
+    name: Content-Type
+    value: application/json
+  - id: pair_5f4b4d1d26e045eca3c46af449cf98d0
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_0f549156be134839a3616a2f5dfbe280
+    name: brands
+    value: "{% now 'iso-8601', '' %}"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692792808982.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,62 @@
+_id: req_74f3d72838c340078ebc5701c69da9ba
+type: Request
+parentId: fld_796c3b1279cb4bef8d79e1da2d50edbc
+modified: 1693486182195
+created: 1693486182195
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: search
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tabName": "{% request 'folder', '', 0 %}",
+    	"fields": [
+    		"id",
+    		"organization",
+    		"brand",
+    		"division",
+    		"brand",
+    		"division",
+    		"group",
+    		"team",
+    		"agent",
+    		"client",
+    		"sentDate",
+    		"brandTemplate",
+    		"status",
+    		"firstOpenDate",
+    		"lastOpenDate",
+    		"openCount"
+    	],
+    	"filters": [],
+    	"offset": 0,
+    	"limit": 20,
+    	"orderBy": {
+    		"id": "DESC"
+    	}
+    }
+parameters: []
+headers:
+  - id: pair_b9f154a809af47e7a99e5ebacd1be0f3
+    name: Content-Type
+    value: application/json
+  - id: pair_555e0ed9af304cde94ebf553abb927bd
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_8f2323cafdbb411cb2dd9ddc5c36b163
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692781551975
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

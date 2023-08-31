@@ -1,0 +1,40 @@
+_id: req_649d3dd50da0435db9ea2cbf052145b3
+type: Request
+parentId: fld_73811b5871b940abbe4e8deadafbf3e7
+modified: 1693486182532
+created: 1693486182532
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getWithdrawalMethodsTermsDisplayListByWithdrawalMethod
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters:
+  - description: ""
+    id: pair_22dcbb7c0a2b4d0cae4867028faa6bf6
+    name: withdrawalMethod
+    value: Bitcoin
+headers:
+  - id: pair_21d9692346c14c78b145b439f3bbaade
+    name: Content-Type
+    value: application/json
+  - id: pair_adc9917023c74b13a671ea26707c7625
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    disabled: false
+    id: pair_730970afa941466b961218a9f4411bc9
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692792943553.0728
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

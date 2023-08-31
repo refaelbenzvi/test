@@ -1,0 +1,35 @@
+_id: req_2906bb7979cb48e6970d92f092490f15
+type: Request
+parentId: fld_e57d8c22e9544e2db94dcc7d220fa35d
+modified: 1693486182053
+created: 1693486182053
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getDisplayList
+description: Get Trading Accounts Display List
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_cc7819030d334efbb7a593df49b42294
+    name: Content-Type
+    value: application/json
+  - id: pair_20e6093eef594230b5842309969c251f
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_9743dad8525148b0bb249dc236d255db
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692693219310.0156
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

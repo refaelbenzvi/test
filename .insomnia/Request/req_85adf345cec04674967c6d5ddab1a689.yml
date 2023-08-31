@@ -1,0 +1,56 @@
+_id: req_85adf345cec04674967c6d5ddab1a689
+type: Request
+parentId: fld_bec43cab80f2445c821ed313512854a8
+modified: 1693486182255
+created: 1693486182255
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: create
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - description: ""
+      disabled: false
+      id: pair_278d916ef7f14c31a5b6759c35ae0e53
+      name: client
+      value: "2"
+    - description: ""
+      disabled: false
+      id: pair_3aa5270234bc431b9a0da080c2d211f0
+      name: type
+      value: Proof Of Id
+    - description: ""
+      disabled: false
+      id: pair_cf593045d20d41e3ac1a7623540d8ab7
+      name: subType
+      value: Passport
+    - description: ""
+      fileName: C:\Users\matan\OneDrive\Pictures\Screenshots\Screenshot 2023-08-02
+        185003.png
+      id: pair_9146926f19064c729183f5c8c30ac031
+      name: files
+      type: file
+      value: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+  - id: pair_5f4b4d1d26e045eca3c46af449cf98d0
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_0f549156be134839a3616a2f5dfbe280
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692795511074
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,35 @@
+_id: req_fcc0725ed2824055bd4e6149630855ed
+type: Request
+parentId: fld_509ee78dcdaf439ca36a60d34d0c1ba6
+modified: 1693486182118
+created: 1693486182118
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getInternalTransferStatusesDisplayList
+description: Get Internal Transfer Statuses Display List
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_785908c258554e9eb99610a98096290f
+    name: Content-Type
+    value: application/json
+  - id: pair_a9074d4d67d24ba8990982ee4f116aa3
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_31bf5e6e709040029d7680978e70f275
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692699532791.5625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

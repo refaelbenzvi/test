@@ -1,0 +1,42 @@
+_id: req_c527c7ddd2e14135a1c8370274beadf4
+type: Request
+parentId: fld_bcfea348e6e440638425cedccd61ee25
+modified: 1693486182222
+created: 1693486182222
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tradingAccount": 5,
+    	"amount": "10",
+    	"type": "Credit",
+    	"reason": 1,
+    	"comment": 2
+    }
+parameters: []
+headers:
+  - id: pair_5b77a50b73954bc9b0662986e94c4873
+    name: Content-Type
+    value: application/json
+  - id: pair_4a88ef7fa9604955ad48d92013c1d50b
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_adce34e4651946728081a9188a3322bb
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692783990579.3438
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

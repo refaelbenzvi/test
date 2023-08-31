@@ -1,0 +1,40 @@
+_id: req_b57e7d4a90f748c89b5986224b87ae96
+type: Request
+parentId: fld_7de27e3de20d413aa3c873cc7b982eb0
+modified: 1693486182162
+created: 1693486182162
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getAccountDataForCheck
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tradingAccountId": 5,
+    	"clientId": 2
+    }
+parameters: []
+headers:
+  - id: pair_92a0efbd933548c18a7e014762f8dad6
+    name: Content-Type
+    value: application/json
+  - id: pair_bcc7a1a7c8eb4b1798bc0ae6dd443b0a
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: brand id of client
+    disabled: false
+    id: pair_f088b963d82849f094af6ff132194e50
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692711702515.3125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

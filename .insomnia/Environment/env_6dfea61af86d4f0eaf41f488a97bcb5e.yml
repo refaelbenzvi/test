@@ -1,0 +1,16 @@
+_id: env_6dfea61af86d4f0eaf41f488a97bcb5e
+type: Environment
+parentId: env_e17e158307024bd989a09414696a31d9
+modified: 1693486181966
+created: 1693486181966
+name: local
+data:
+  host: http://localhost:3000
+  token: oyX9UL3Py6uW0rcDNybuVU3VkHaZqNCVFsFfm7hOq2i
+dataPropertyOrder:
+  "&":
+    - token
+    - host
+color: "#df2626"
+isPrivate: false
+metaSortKey: 1692627287530

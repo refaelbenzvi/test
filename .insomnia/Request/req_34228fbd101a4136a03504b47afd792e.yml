@@ -1,0 +1,40 @@
+_id: req_34228fbd101a4136a03504b47afd792e
+type: Request
+parentId: fld_53c2bb4627cd4fb5beab007db696d11b
+modified: 1693486182137
+created: 1693486182137
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getHistoryLog
+description: Get History Log Of Transactions
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters:
+  - description: internal transfer id
+    id: pair_577374b42da54f4f859045f41476e745
+    name: id
+    value: "1"
+headers:
+  - id: pair_785908c258554e9eb99610a98096290f
+    name: Content-Type
+    value: application/json
+  - id: pair_a9074d4d67d24ba8990982ee4f116aa3
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    disabled: false
+    id: pair_61a34e10b6f6425f842c1e6a3964353c
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692699943630.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

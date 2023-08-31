@@ -1,0 +1,39 @@
+_id: req_da4ba538df504df393d663885e3e67db
+type: Request
+parentId: fld_4ab10c4fffe54bff98fa5a3387b226be
+modified: 1693486182106
+created: 1693486182106
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: sendOtpEmail
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"clientId": 1
+    }
+parameters: []
+headers:
+  - id: pair_424005f62fff4c51be20d617ca5ca562
+    name: Content-Type
+    value: application/json
+  - description: ""
+    id: pair_9b41e53c1c3d418fbeba71045dbead5c
+    name: brands
+    value: "1"
+  - id: pair_d1db1d1deb844712b81070788433a229
+    name: client
+    value: "1"
+    description: ""
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 323.4375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

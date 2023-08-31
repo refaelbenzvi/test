@@ -1,0 +1,37 @@
+_id: req_cc6abc219df6406b8873ac099085f2ba
+type: Request
+parentId: fld_ce69d937f4334a3ab51cad8cc9c28501
+modified: 1693486182037
+created: 1693486182037
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %} "
+name: getCallRecordingLink
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"callId": 1,
+    	"duration": 60000 {# duration in millisconds #}
+    }
+parameters: []
+headers:
+  - id: pair_a65abd735f85495ea393b42fed401788
+    name: Content-Type
+    value: application/json
+  - description: ""
+    disabled: false
+    id: pair_6e51897ba81746a187c43c41e50c65cb
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 249.8046875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,59 @@
+_id: req_b6ca62fe93124de19bd5b634ad4d24a6
+type: Request
+parentId: fld_2e18398d56074eee9dcabb8c7328d4ab
+modified: 1693486182351
+created: 1693486182351
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %} "
+name: searchExport
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - id: pair_dd54f6ccda80450fb1553af40611964b
+      name: tabName
+      value: "{% request 'folder', '', 0 %}"
+    - description: ""
+      id: pair_fa6692873d394a6bbad3895b0c5c4576
+      name: exportFileName
+      value: "{% request 'folder', '', 0 %}.csv"
+    - description: ""
+      id: pair_8bb18ae2c35945b09b9f5ddc495ff939
+      name: fields
+      value: '[    "id",    "name",    "host",    "provider"]'
+    - description: 'example: { "id": {"mode": "EQ",	"value": [	"3"] } } '
+      id: pair_089a06e5adb3489db1f5d8a31f403ad4
+      name: filters
+      value: "[]"
+    - description: ""
+      id: pair_bf08f8d51fc1459d8346594e4408e172
+      name: orderBy
+      value: '{"id":"DESC"}'
+    - description: ""
+      id: pair_b1df15de99d14908b5abce1dd58511ec
+      name: authoization
+      value: Bearer {{ _.token }}
+    - description: ""
+      id: pair_4a6338e326b042be926072438155f98a
+      name: brands
+      value: "[1]"
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+  - description: ""
+    disabled: false
+    id: pair_6e51897ba81746a187c43c41e50c65cb
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692793315624.6562
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

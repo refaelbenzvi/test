@@ -1,0 +1,37 @@
+_id: req_9d4a78e36ac848d7814979893eaf180b
+type: Request
+parentId: fld_34245122b7ff49d1b9eab03bf04dd253
+modified: 1693486182315
+created: 1693486182315
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getBrandTemplateDisplayListByBrand
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"brand": 1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - id: pair_5f4b4d1d26e045eca3c46af449cf98d0
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_0f549156be134839a3616a2f5dfbe280
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692792217899.9844
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

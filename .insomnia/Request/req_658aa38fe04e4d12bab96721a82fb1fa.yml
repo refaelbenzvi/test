@@ -1,0 +1,62 @@
+_id: req_658aa38fe04e4d12bab96721a82fb1fa
+type: Request
+parentId: fld_39debd5893274cfeaea12d6dc2b83979
+modified: 1693486182127
+created: 1693486182127
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: searchExport
+description: Download A csv Of Internal Transfer
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - description: ""
+      id: pair_1fa723e3e04547fe890f05332c8d588e
+      name: tabName
+      value: manualUpdates
+    - description: ""
+      id: pair_b4f9871b92be4614b816597302e9aed5
+      name: exportFileName
+      value: manualUpdates.csv
+    - description: ""
+      disabled: false
+      id: pair_dc511784e74746d8a0e54128b40e8926
+      multiline: false
+      name: fields
+      type: text
+      value: '["id","organization","brand","division","group","team","agent","client","tradingAccount","transaction","requestedChanges","updateReason"]'
+    - description: ""
+      id: pair_fb7d984362624f948e1279985390d3ba
+      name: filters
+      value: "[]"
+    - description: ""
+      id: pair_a2cde486c21e46ae810d6fb1e4ce4069
+      name: orderBy
+      value: '{"id":"DESC"}'
+    - description: ""
+      id: pair_1c1079bcdd28456494e62767b94152a0
+      name: brands
+      value: "[-1,1,2,3,4,5,6]"
+parameters: []
+headers:
+  - id: pair_e290bce070a946e3841212c18e343212
+    name: Content-Type
+    value: application/x-www-form-urlencoded
+  - id: pair_59c26b6301d847b6a5be727e760e040a
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_7a78c8a2acbb4ae2b2524cd3c9520a26
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692699121952.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

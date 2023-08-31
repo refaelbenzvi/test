@@ -1,0 +1,36 @@
+_id: req_904cbe1bb0b0417991495a3e15a254b2
+type: Request
+parentId: fld_4ab10c4fffe54bff98fa5a3387b226be
+modified: 1693486182091
+created: 1693486182091
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: requestPasswordReset
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_424005f62fff4c51be20d617ca5ca562
+    name: Content-Type
+    value: application/json
+  - description: ""
+    id: pair_9b41e53c1c3d418fbeba71045dbead5c
+    name: brands
+    value: "1"
+  - id: pair_288decee99fb4d1dbe4bef14d7d32986
+    name: client
+    value: "1"
+    description: ""
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 343.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

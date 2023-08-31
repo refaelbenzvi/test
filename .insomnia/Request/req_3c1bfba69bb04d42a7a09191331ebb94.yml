@@ -1,0 +1,36 @@
+_id: req_3c1bfba69bb04d42a7a09191331ebb94
+type: Request
+parentId: fld_4ab10c4fffe54bff98fa5a3387b226be
+modified: 1693486182090
+created: 1693486182090
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: updateClientStatus
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 1,
+    	"status": 1 {#  id reference to statuses table #}
+    }
+parameters: []
+headers:
+  - id: pair_424005f62fff4c51be20d617ca5ca562
+    name: Content-Type
+    value: application/json
+  - description: ""
+    id: pair_9b41e53c1c3d418fbeba71045dbead5c
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 312.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

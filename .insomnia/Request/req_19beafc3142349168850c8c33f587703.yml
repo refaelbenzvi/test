@@ -1,0 +1,38 @@
+_id: req_19beafc3142349168850c8c33f587703
+type: Request
+parentId: fld_e57d8c22e9544e2db94dcc7d220fa35d
+modified: 1693486182061
+created: 1693486182061
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: createCryptoWalletAddress
+description: Create Crypto Wallet Address
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tradingAccountId': 1,
+    	"asset": ""
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - id: pair_59c26b6301d847b6a5be727e760e040a
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_7a78c8a2acbb4ae2b2524cd3c9520a26
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692694191885.462
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

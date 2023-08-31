@@ -1,0 +1,36 @@
+_id: req_ee4afd4ffc7441de91f5644595f62bef
+type: Request
+parentId: fld_7de27e3de20d413aa3c873cc7b982eb0
+modified: 1693486182160
+created: 1693486182160
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getRawStatusesDisplayList
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_92a0efbd933548c18a7e014762f8dad6
+    name: Content-Type
+    value: application/json
+  - id: pair_bcc7a1a7c8eb4b1798bc0ae6dd443b0a
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: brand id of client
+    disabled: false
+    id: pair_f088b963d82849f094af6ff132194e50
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692711959208.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

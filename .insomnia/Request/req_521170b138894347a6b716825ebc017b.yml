@@ -1,0 +1,34 @@
+_id: req_521170b138894347a6b716825ebc017b
+type: Request
+parentId: fld_796c3b1279cb4bef8d79e1da2d50edbc
+modified: 1693486182199
+created: 1693486182199
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getEmailsStatusesDisplayList
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - id: pair_adc9917023c74b13a671ea26707c7625
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_730970afa941466b961218a9f4411bc9
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692780607213.9062
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

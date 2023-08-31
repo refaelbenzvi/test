@@ -1,0 +1,58 @@
+_id: req_5c0a5ac8e75c4c1fb62fe9b4c2769188
+type: Request
+parentId: fld_940632a66ff5473a856ccd9c03e9386d
+modified: 1693486182229
+created: 1693486182229
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: searchExport
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - description: ""
+      id: pair_2038892f021b448381c55bf2c3d25002
+      name: tabName
+      value: "{% request 'folder', '', 0 %}"
+    - description: ""
+      id: pair_a3ad62ad340f4d15a238d6090ee1859f
+      name: exportFileName
+      value: "{% request 'folder', '', 0 %}.csv"
+    - description: ""
+      id: pair_5714796b6f024d97afff9b0f9d1c4ff8
+      name: fields
+      value: '["id","comment","organization","brand"]'
+    - description: ""
+      id: pair_22e9708af9eb402db39dfb063af05081
+      name: filters
+      value: "[]"
+    - description: ""
+      id: pair_cea7116818fc442e88f95b8abf7f018a
+      name: orderBy
+      value: '{"id":"DESC"}'
+    - description: ""
+      id: pair_2cfd8f0ac6d240edaaed3b4346b6d6ca
+      name: brands
+      value: "[-1,1,2,3,4,5,6]"
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+  - id: pair_902d1d4fd9084940bfa3b205f91ab937
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_6af3fe2dea0b4e8e98f58ce9f9a62bbd
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692785578655.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

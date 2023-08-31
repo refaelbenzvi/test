@@ -1,0 +1,70 @@
+_id: req_4c55de0380f34c60b00433dfe94a1c79
+type: Request
+parentId: fld_e57d8c22e9544e2db94dcc7d220fa35d
+modified: 1693486182044
+created: 1693486182044
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: search
+description: Search Trading Accounts
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tabName": "{% request 'folder', '', 0 %}",
+    	"fields": [
+    		"id",
+    		"organization",
+    		"brand",
+    		"division",
+    		"group",
+    		"team",
+    		"agent",
+    		"client",
+    		"login",
+    		"currency",
+    		"balance",
+    		"credit",
+    		"equity",
+    		"floating",
+    		"margin",
+    		"profit",
+    		"storage",
+    		"traderGroup",
+    		"comment",
+    		"traderId",
+    		"traderUsername",
+    		"isDemo",
+    		"status",
+    		"createdDate"
+    	],
+    	"filters": [],
+    	"offset": 0,
+    	"limit": 20,
+    	"orderBy": {
+    		"id": "DESC"
+    	}
+    }
+parameters: []
+headers:
+  - id: pair_4d5f86726d4d4b93bdaa1977176bf237
+    name: Content-Type
+    value: application/json
+  - id: pair_a3301fa7a0aa465081528863baac2dc9
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_9501175c28a549959453eb6dff7abcb8
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692694191887
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

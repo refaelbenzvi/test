@@ -1,0 +1,36 @@
+_id: req_4cf0ccb7875a4e5493ac08bde8a739c6
+type: Request
+parentId: fld_ce69d937f4334a3ab51cad8cc9c28501
+modified: 1693486182033
+created: 1693486182033
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: updateStartedAt
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"UPDATE_START_DATE": {% now 'millis', '' %}
+    }
+parameters: []
+headers:
+  - id: pair_a65abd735f85495ea393b42fed401788
+    name: Content-Type
+    value: application/json
+  - description: ""
+    disabled: false
+    id: pair_6e51897ba81746a187c43c41e50c65cb
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 249.21875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

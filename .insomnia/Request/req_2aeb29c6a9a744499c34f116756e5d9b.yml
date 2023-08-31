@@ -1,0 +1,36 @@
+_id: req_2aeb29c6a9a744499c34f116756e5d9b
+type: Request
+parentId: fld_d138951bdbb848b8bb2421a5fd228779
+modified: 1693486181998
+created: 1693486181998
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: signAgreement
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "agreementId": 3,
+    		"signature": "path_to_signature"
+    }
+parameters: []
+headers:
+  - id: pair_424005f62fff4c51be20d617ca5ca562
+    name: Content-Type
+    value: application/json
+  - description: ""
+    id: pair_9b41e53c1c3d418fbeba71045dbead5c
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 350
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

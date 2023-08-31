@@ -1,0 +1,40 @@
+_id: req_3f5c0f0cc0f647d8908c91ce2265b44f
+type: Request
+parentId: fld_4ab10c4fffe54bff98fa5a3387b226be
+modified: 1693486182104
+created: 1693486182104
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: storeMarketingEmailsRequest
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters:
+  - description: ""
+    id: pair_1a1d61a3180b49fca0c02da6f94ab9cc
+    name: id
+    value: "1"
+headers:
+  - id: pair_424005f62fff4c51be20d617ca5ca562
+    name: Content-Type
+    value: application/json
+  - description: ""
+    id: pair_9b41e53c1c3d418fbeba71045dbead5c
+    name: brands
+    value: "1"
+  - description: ""
+    id: pair_d1db1d1deb844712b81070788433a229
+    name: client
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 321.7529296875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,60 @@
+_id: req_8e60d6c3ed49487bab5b6ba7a88b15ef
+type: Request
+parentId: fld_d138951bdbb848b8bb2421a5fd228779
+modified: 1693486181983
+created: 1693486181983
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %} "
+name: search
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tabName": "{% request 'folder', '', 0 %}",
+    	"fields": [
+        "id",
+        "organization",
+        "brand",
+        "division",
+        "group",
+        "team",
+        "agent",
+        "client",
+        "brandTemplate",
+        "file",
+        "isSigned",
+        "description",
+        "createdDate",
+        "expirationDate"
+    ],
+    	"filters": [
+    	 {#  example: { "id": {"mode": "EQ",	"value": [	"3"] } }  #}
+    	],
+    	"offset": 0,
+    	"limit": 20,
+    	"orderBy": {
+    		"id": "DESC"
+    	}
+    }
+parameters: []
+headers:
+  - id: pair_a65abd735f85495ea393b42fed401788
+    name: Content-Type
+    value: application/json
+  - description: ""
+    disabled: false
+    id: pair_6e51897ba81746a187c43c41e50c65cb
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 200
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

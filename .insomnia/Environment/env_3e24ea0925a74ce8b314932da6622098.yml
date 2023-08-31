@@ -1,0 +1,16 @@
+_id: env_3e24ea0925a74ce8b314932da6622098
+type: Environment
+parentId: env_e17e158307024bd989a09414696a31d9
+modified: 1693486181969
+created: 1693486181969
+name: Testing
+data:
+  host: https://backend.testing.uticen.com
+  token: 1Vs7Nz3WHfIKSqwGekIxtG5JnoUH1Rh6jSUEjS_fUTY
+dataPropertyOrder:
+  "&":
+    - token
+    - host
+color: "#b6941b"
+isPrivate: false
+metaSortKey: 1692627344639

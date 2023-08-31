@@ -1,0 +1,39 @@
+_id: req_6edc55da5f754188823e347a9f036409
+type: Request
+parentId: fld_940632a66ff5473a856ccd9c03e9386d
+modified: 1693486182238
+created: 1693486182238
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getTradingAccountAllowedIncentivesCommentsDisplayList
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters:
+  - description: ""
+    id: pair_c544511809d943139489d34685b94e66
+    name: tradingAccountId
+    value: "5"
+headers:
+  - id: pair_2dfdba424f9940bf9e8ec75525a68284
+    name: Content-Type
+    value: application/json
+  - id: pair_902d1d4fd9084940bfa3b205f91ab937
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_6af3fe2dea0b4e8e98f58ce9f9a62bbd
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692788691817.4844
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

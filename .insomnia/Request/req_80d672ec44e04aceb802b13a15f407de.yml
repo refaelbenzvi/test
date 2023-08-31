@@ -1,0 +1,42 @@
+_id: req_80d672ec44e04aceb802b13a15f407de
+type: Request
+parentId: fld_278538a495094973b222e19a353c5703
+modified: 1693486182276
+created: 1693486182276
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %} "
+name: searchCount
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "tabName": "{% request 'folder', '', 0 %}",
+        "filters": [],
+        "offset": 0,
+        "limit": 20,
+        "orderBy": {
+            "id": "DESC"
+        }
+    }
+parameters: []
+headers:
+  - id: pair_a65abd735f85495ea393b42fed401788
+    name: Content-Type
+    value: application/json
+  - description: ""
+    disabled: false
+    id: pair_6e51897ba81746a187c43c41e50c65cb
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692793400065.0156
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

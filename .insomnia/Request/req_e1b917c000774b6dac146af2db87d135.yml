@@ -1,0 +1,37 @@
+_id: req_e1b917c000774b6dac146af2db87d135
+type: Request
+parentId: fld_08f3d435267f446f898458e91e933886
+modified: 1693486182378
+created: 1693486182378
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getHistoryLog
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters:
+  - description: ""
+    id: pair_51852d98041d42328dd5bd284a54bf72
+    name: id
+    value: "3"
+headers:
+  - id: pair_a65abd735f85495ea393b42fed401788
+    name: Content-Type
+    value: application/json
+  - description: ""
+    disabled: false
+    id: pair_6e51897ba81746a187c43c41e50c65cb
+    name: brands
+    value: "3"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692793062303.5781
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

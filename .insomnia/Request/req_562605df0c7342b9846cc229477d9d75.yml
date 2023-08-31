@@ -1,0 +1,37 @@
+_id: req_562605df0c7342b9846cc229477d9d75
+type: Request
+parentId: fld_e57d8c22e9544e2db94dcc7d220fa35d
+modified: 1693486182055
+created: 1693486182055
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: retryCreatingTradingAccount
+description: Retry Creating Trading Account
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - id: pair_59c26b6301d847b6a5be727e760e040a
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_7a78c8a2acbb4ae2b2524cd3c9520a26
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692694191885.8281
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

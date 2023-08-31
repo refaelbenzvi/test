@@ -1,0 +1,40 @@
+_id: req_69f512a2b52a45259d53b40686ab7b8e
+type: Request
+parentId: fld_7ab6ce1217f64bf0888209a5de6d4502
+modified: 1693486182550
+created: 1693486182550
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getWithdrawalReasonsByOrganizationAndTypeDisplayList
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"organizationName": "Utopia Testing",
+    	"type": "Pending"
+    }
+parameters: []
+headers:
+  - id: pair_21d9692346c14c78b145b439f3bbaade
+    name: Content-Type
+    value: application/json
+  - id: pair_adc9917023c74b13a671ea26707c7625
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    disabled: false
+    id: pair_730970afa941466b961218a9f4411bc9
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692792936631.7932
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,62 @@
+_id: req_d8f917bc9b1f49069d2cfe1abd85dae9
+type: Request
+parentId: fld_7de27e3de20d413aa3c873cc7b982eb0
+modified: 1693486182156
+created: 1693486182156
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: searchExport
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - description: ""
+      id: pair_7a917b0ea98442c289864ec60422a09b
+      name: tabName
+      value: withdrawalRequests
+    - description: ""
+      id: pair_b2dc4c6c43904e84b29af456547b27cd
+      name: exportFileName
+      value: withdrawalRequests.csv
+    - description: ""
+      id: pair_ef666b7096c04729945d426dc7547219
+      multiline: false
+      name: fields
+      type: text
+      value: '["id","organization","brand","division","group","team","agent","tradingAccountId","login","client","status","amount","currency","reason","externalReason","withdrawalMethod","withdrawalMethodDetails","dedBonus","usdConversionRate","usdAmount","balance","credit","referenceFile","amountRemains","externalWithdrawalRequestId","expirationDate","createdDate"]'
+    - description: ""
+      id: pair_5bfaf20321dd451ca21ef5be521329b7
+      name: filters
+      value: "[]"
+    - description: ""
+      id: pair_6aabe6712b844cd3977da5fe379e4f82
+      name: orderBy
+      value: '{"id":"DESC"}'
+    - description: ""
+      id: pair_899a94ebf02a4595b279656954f4fd98
+      name: brands
+      value: "[-1,1,2,3,4,5,6]"
+parameters: []
+headers:
+  - id: pair_f8b4e534c8734a2189a9281c4c7b51cb
+    name: Content-Type
+    value: application/x-www-form-urlencoded
+  - id: pair_bcc7a1a7c8eb4b1798bc0ae6dd443b0a
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: brand id of client
+    disabled: true
+    id: pair_f088b963d82849f094af6ff132194e50
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692711445822
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

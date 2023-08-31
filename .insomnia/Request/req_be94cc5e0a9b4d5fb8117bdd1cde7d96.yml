@@ -1,0 +1,47 @@
+_id: req_be94cc5e0a9b4d5fb8117bdd1cde7d96
+type: Request
+parentId: fld_4ab10c4fffe54bff98fa5a3387b226be
+modified: 1693486182085
+created: 1693486182085
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getDisplayList
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters:
+  - id: pair_51852d98041d42328dd5bd284a54bf72
+    name: offset
+    value: "0"
+    description: ""
+    disabled: false
+  - id: pair_bf314a06830f4fb6b43670102254ea9b
+    name: limit
+    value: "500"
+    description: ""
+    disabled: false
+  - id: pair_ee18980a535d4b39bed9791e694a66e3
+    name: searchValue
+    value: ""
+    description: ""
+    disabled: true
+headers:
+  - id: pair_a65abd735f85495ea393b42fed401788
+    name: Content-Type
+    value: application/json
+  - id: pair_2f797e6683a543809b45262e4d3402cd
+    name: brands
+    value: "1"
+    description: ""
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 262.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

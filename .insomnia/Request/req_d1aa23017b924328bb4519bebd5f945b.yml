@@ -1,0 +1,36 @@
+_id: req_d1aa23017b924328bb4519bebd5f945b
+type: Request
+parentId: fld_d138951bdbb848b8bb2421a5fd228779
+modified: 1693486181996
+created: 1693486181996
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getAgreementById
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"agreementId": 3
+    }
+parameters: []
+headers:
+  - id: pair_a65abd735f85495ea393b42fed401788
+    name: Content-Type
+    value: application/json
+  - description: ""
+    disabled: false
+    id: pair_6e51897ba81746a187c43c41e50c65cb
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 243.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

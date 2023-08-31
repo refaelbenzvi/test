@@ -1,0 +1,44 @@
+_id: req_75b098b948f34ae2918c8ea4a9988130
+type: Request
+parentId: fld_89d9c91b939448d09b8bf23f4f6c4b8a
+modified: 1693486182007
+created: 1693486182007
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: searchCount
+description: Search Amount Of Notes That Has Been Found
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tabName": "notes",
+    	"filters": [],
+    	"offset": 0,
+    	"limit": 20,
+    	"orderBy": {
+    		"id": "DESC"
+    	}
+    }
+parameters: []
+headers:
+  - id: pair_5c58cea9849c464ba35ef3a918dc61a0
+    name: Content-Type
+    value: application/json
+  - id: pair_6bea26b8055f4077813c859fdf520b26
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_42d331e02ff84502a9b788d0c7f8e141
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692638440653.1104
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

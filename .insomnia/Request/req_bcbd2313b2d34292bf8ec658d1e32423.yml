@@ -1,0 +1,40 @@
+_id: req_bcbd2313b2d34292bf8ec658d1e32423
+type: Request
+parentId: fld_29f5c2e8e1184c79993d93a3c22c4d43
+modified: 1693486182434
+created: 1693486182434
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getBrandLanguagesDisplayList
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters:
+  - description: ""
+    id: pair_b3e77cc2eb4c436c8f25934403a7095b
+    name: brand
+    value: "1"
+headers:
+  - id: pair_21d9692346c14c78b145b439f3bbaade
+    name: Content-Type
+    value: application/json
+  - id: pair_adc9917023c74b13a671ea26707c7625
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    disabled: false
+    id: pair_730970afa941466b961218a9f4411bc9
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692792840647.6348
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

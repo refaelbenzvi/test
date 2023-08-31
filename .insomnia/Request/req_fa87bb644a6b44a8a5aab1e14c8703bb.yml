@@ -1,0 +1,39 @@
+_id: req_fa87bb644a6b44a8a5aab1e14c8703bb
+type: Request
+parentId: fld_89708c49e6e448b8b8f04c8a43c2b3cc
+modified: 1693486182286
+created: 1693486182286
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getBrandTagsByBrandAndLanguage
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"brand": 1,
+    	"language": "Abkhaz"
+    }
+parameters: []
+headers:
+  - id: pair_16adcced39aa46c5a5d19e265d41782c
+    name: Content-Type
+    value: application/json
+  - id: pair_5f4b4d1d26e045eca3c46af449cf98d0
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_0f549156be134839a3616a2f5dfbe280
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692792808982.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

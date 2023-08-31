@@ -1,0 +1,30 @@
+_id: req_6512aa72643545baa59f6a3a8f255b2f
+type: Request
+parentId: fld_bec43cab80f2445c821ed313512854a8
+modified: 1693486182259
+created: 1693486182259
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getDocumentsSubTypesDisplayList
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_5f4b4d1d26e045eca3c46af449cf98d0
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_0f549156be134839a3616a2f5dfbe280
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692790782413.875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

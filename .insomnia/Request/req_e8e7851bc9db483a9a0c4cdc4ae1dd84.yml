@@ -1,0 +1,77 @@
+_id: req_e8e7851bc9db483a9a0c4cdc4ae1dd84
+type: Request
+parentId: fld_53c2bb4627cd4fb5beab007db696d11b
+modified: 1693486182132
+created: 1693486182132
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: search
+description: Search Transactions
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tabName": "{% request 'folder', '', 0 %}",
+    	"fields": [
+    		"id",
+    		"organization",
+    		"brand",
+    		"division",
+    		"group",
+    		"team",
+    		"agent",
+    		"client",
+    		"tradingAccount",
+    		"login",
+    		"externalTransactionId",
+    		"amount",
+    		"currency",
+    		"status",
+    		"usdAmount",
+    		"usdConversionRate",
+    		"tradingAccountAmount",
+    		"tradingAccountCurrency",
+    		"tradingAccountCurrencyConversionRate",
+    		"type",
+    		"subType",
+    		"rejectReason",
+    		"createdDate",
+    		"pspTransactionId",
+    		"pspName",
+    		"paymentMethod",
+    		"payerName",
+    		"walletAddress",
+    		"lastFourDigits",
+    		"iban"
+    	],
+    	"filters": [],
+    	"offset": 0,
+    	"limit": 20,
+    	"orderBy": {
+    		"id": "DESC"
+    	}
+    }
+parameters: []
+headers:
+  - id: pair_e95121d185a843cc9c5667630877b8a2
+    name: Content-Type
+    value: application/json
+  - id: pair_c01425d90ba044bebfe159da2596c4c6
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    disabled: false
+    id: pair_e70d132f223a4b719d47b06f27be2c51
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692700765308
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

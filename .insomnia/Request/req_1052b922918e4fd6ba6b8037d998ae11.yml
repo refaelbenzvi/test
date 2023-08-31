@@ -1,0 +1,56 @@
+_id: req_1052b922918e4fd6ba6b8037d998ae11
+type: Request
+parentId: fld_4ab10c4fffe54bff98fa5a3387b226be
+modified: 1693486182080
+created: 1693486182080
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: update
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 1,
+    	"firstName": "John",
+    	"lastName": "Doe",
+    	"brand": 1,
+    	"language": "ab",
+    	"status": null,
+    	"country": "AX",
+    	"mainAddress": "Address",
+    	"additionalAddress": null,
+    	"zipCode": "44457745",
+    	"email": "email@email.com",
+    	"phones": [
+    		{
+    			"name": "John",
+    			"phone": "4242412442"
+    		}
+    	],
+    	"birthDate": "1989-02-01",
+    	"password": null,
+    	"termsConfirmed": null,
+    	"state": null,
+    	"city": "Vårdö"
+    }
+parameters: []
+headers:
+  - id: pair_424005f62fff4c51be20d617ca5ca562
+    name: Content-Type
+    value: application/json
+  - description: ""
+    id: pair_9b41e53c1c3d418fbeba71045dbead5c
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 300
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

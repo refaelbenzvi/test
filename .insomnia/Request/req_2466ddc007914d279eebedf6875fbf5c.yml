@@ -1,0 +1,37 @@
+_id: req_2466ddc007914d279eebedf6875fbf5c
+type: Request
+parentId: fld_ce69d937f4334a3ab51cad8cc9c28501
+modified: 1693486182016
+created: 1693486182016
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: remove
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "ids": [
+            1
+        ]
+    }
+parameters: []
+headers:
+  - id: pair_424005f62fff4c51be20d617ca5ca562
+    name: Content-Type
+    value: application/json
+  - description: ""
+    id: pair_9b41e53c1c3d418fbeba71045dbead5c
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: 100
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

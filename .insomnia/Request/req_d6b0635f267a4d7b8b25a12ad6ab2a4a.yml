@@ -1,0 +1,43 @@
+_id: req_d6b0635f267a4d7b8b25a12ad6ab2a4a
+type: Request
+parentId: fld_f804f7961ca142f38922d9f323d399d0
+modified: 1693486182401
+created: 1693486182401
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: update
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 5,
+    	"name": "Agent 4",
+    	"brand": 1,
+    	"team": 1,
+    	"user": 1,
+    	"active": true
+    }
+parameters: []
+headers:
+  - id: pair_ad0833ecf7f84c879723a03c7fb6ab60
+    name: Content-Type
+    value: application/json
+  - id: pair_5f4b4d1d26e045eca3c46af449cf98d0
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_0f549156be134839a3616a2f5dfbe280
+    name: brands
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692794160028.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

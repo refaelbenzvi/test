@@ -1,0 +1,59 @@
+_id: req_d53d9b079564459b9cc299e670d0ddec
+type: Request
+parentId: fld_89d9c91b939448d09b8bf23f4f6c4b8a
+modified: 1693486182009
+created: 1693486182009
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: searchExport
+description: Download A csv Of Notes
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - description: ""
+      id: pair_1fa723e3e04547fe890f05332c8d588e
+      name: tabName
+      value: notes
+    - description: ""
+      id: pair_b4f9871b92be4614b816597302e9aed5
+      name: exportFileName
+      value: notes.csv
+    - description: ""
+      id: pair_dc511784e74746d8a0e54128b40e8926
+      name: fields
+      value: '["id","organization","brand","division","group","team","agent","client","call","noteTitle","note","createdDate"]'
+    - description: ""
+      id: pair_fb7d984362624f948e1279985390d3ba
+      name: filters
+      value: "[]"
+    - description: ""
+      id: pair_a2cde486c21e46ae810d6fb1e4ce4069
+      name: orderBy
+      value: '{"id":"DESC"}'
+    - description: ""
+      id: pair_1c1079bcdd28456494e62767b94152a0
+      name: brands
+      value: "[-1,1,2,3,4,5,6]"
+parameters: []
+headers:
+  - id: pair_e290bce070a946e3841212c18e343212
+    name: Content-Type
+    value: application/x-www-form-urlencoded
+  - id: pair_59c26b6301d847b6a5be727e760e040a
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_7a78c8a2acbb4ae2b2524cd3c9520a26
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692637647749.9717
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

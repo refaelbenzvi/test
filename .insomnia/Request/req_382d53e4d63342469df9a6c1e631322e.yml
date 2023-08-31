@@ -1,0 +1,37 @@
+_id: req_382d53e4d63342469df9a6c1e631322e
+type: Request
+parentId: fld_4c4a3848c6e54229b0244391999219e0
+modified: 1693486182187
+created: 1693486182187
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: update
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 1,
+    	{# set here all fields you  wish to update #}
+    	"withdrawalMethodId": 1,
+    	"withdrawalMethodDetails": {
+    		"bitcoin": "details updated"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.5
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692779433335.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

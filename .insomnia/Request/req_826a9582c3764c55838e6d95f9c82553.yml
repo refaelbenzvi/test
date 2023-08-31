@@ -1,0 +1,58 @@
+_id: req_826a9582c3764c55838e6d95f9c82553
+type: Request
+parentId: fld_e4569da3c4274669b76925f7ea820e78
+modified: 1693486182174
+created: 1693486182174
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: searchExport
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - description: ""
+      id: pair_88f0f0caa5ba46e8a89ff88b26b07a83
+      name: tabName
+      value: unassignedClients
+    - description: ""
+      id: pair_5f47b10a573c46f3987846200f22423a
+      name: exportFileName
+      value: unassignedClients.csv
+    - description: ""
+      id: pair_bba0adb958a948c0a157837a00e6fe71
+      name: fields
+      value: '["id","client","organization","brand","division","group","team","language","email"]'
+    - description: ""
+      id: pair_44f61d79a59a41c88004c75d13a59cec
+      name: filters
+      value: "[]"
+    - description: ""
+      id: pair_07d072855c3046faa2c4052235ed5913
+      name: orderBy
+      value: '{"id":"DESC"}'
+    - description: ""
+      id: pair_fe42f72930e84e99bf0e62a26a8aeb4d
+      name: brands
+      value: "[-1,1,2,3,4,5,6]"
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+  - id: pair_adc9917023c74b13a671ea26707c7625
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_730970afa941466b961218a9f4411bc9
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692774378460.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

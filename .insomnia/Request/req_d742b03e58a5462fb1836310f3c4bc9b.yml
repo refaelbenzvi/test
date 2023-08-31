@@ -1,0 +1,35 @@
+_id: req_d742b03e58a5462fb1836310f3c4bc9b
+type: Request
+parentId: fld_4c4a3848c6e54229b0244391999219e0
+modified: 1693486182192
+created: 1693486182192
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: getClientWithdrawalMethodsByClientId
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_0562dbd90d474bfcbedd1accd0f7ec2c
+    name: Content-Type
+    value: application/json
+  - id: pair_f0f23ade62c8489a84b3f3a76016a74a
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_02a4891d16b741368274d7b734dccc1b
+    name: client
+    value: "1"
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692778491709.0625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

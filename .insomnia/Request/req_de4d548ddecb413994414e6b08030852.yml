@@ -1,0 +1,59 @@
+_id: req_de4d548ddecb413994414e6b08030852
+type: Request
+parentId: fld_39debd5893274cfeaea12d6dc2b83979
+modified: 1693486182124
+created: 1693486182124
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: search
+description: Search Manual Updates
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tabName": "{% request 'folder', '', 0 %}",
+    	"fields": [
+    		"id",
+    		"organization",
+    		"brand",
+    		"division",
+    		"group",
+    		"team",
+    		"agent",
+    		"client",
+    		"tradingAccount",
+    		"transaction",
+    		"requestedChanges",
+    		"updateReason"
+    	],
+    	"filters": [],
+    	"offset": 0,
+    	"limit": 20,
+    	"orderBy": {
+    		"id": "DESC"
+    	}
+    }
+parameters: []
+headers:
+  - id: pair_e95121d185a843cc9c5667630877b8a2
+    name: Content-Type
+    value: application/json
+  - id: pair_c01425d90ba044bebfe159da2596c4c6
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    disabled: false
+    id: pair_e70d132f223a4b719d47b06f27be2c51
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692700765308
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

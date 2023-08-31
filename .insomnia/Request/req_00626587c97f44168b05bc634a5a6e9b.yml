@@ -1,0 +1,40 @@
+_id: req_00626587c97f44168b05bc634a5a6e9b
+type: Request
+parentId: fld_509ee78dcdaf439ca36a60d34d0c1ba6
+modified: 1693486182111
+created: 1693486182111
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: create
+description: Create Internal Transfer
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"sourceAccount": 5,
+    	"targetAccount": 1,
+    	"amount": "50"
+    }
+parameters: []
+headers:
+  - id: pair_d89aaf053d1e403393ca248e11cc7b45
+    name: Content-Type
+    value: application/json
+  - id: pair_a42f022842a84336b3174b8ea6470c25
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_1011c1c403664c88b25b5ac052057a92
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692707338729
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

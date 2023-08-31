@@ -1,0 +1,41 @@
+_id: req_f4dc2dc4bc8c440684c5f8352db68737
+type: Request
+parentId: fld_bcfea348e6e440638425cedccd61ee25
+modified: 1693486182220
+created: 1693486182220
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: update
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 1,
+    	{# set here all fields you  wish to update #}
+    	"tradingAccount": 1,
+    	"status": ""
+    }
+parameters: []
+headers:
+  - id: pair_5b77a50b73954bc9b0662986e94c4873
+    name: Content-Type
+    value: application/json
+  - id: pair_4a88ef7fa9604955ad48d92013c1d50b
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_adce34e4651946728081a9188a3322bb
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692783833250.0312
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

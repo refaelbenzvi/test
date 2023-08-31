@@ -1,0 +1,39 @@
+_id: req_9dcc0ea6e5314ec3a962ad8af7859070
+type: Request
+parentId: fld_89d9c91b939448d09b8bf23f4f6c4b8a
+modified: 1693486182003
+created: 1693486182003
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: update
+description: Update Note
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 1,
+    	"note": "This is a updated sample note two"
+    }
+parameters: []
+headers:
+  - id: pair_26b8e2d2c6ab483387e588432024da7a
+    name: Content-Type
+    value: application/json
+  - id: pair_005d7adb4e2e4ccf97d682b5f689f0e3
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_faa2b117ba8b43d39a33ba5da15ca99e
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692638837104.6797
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

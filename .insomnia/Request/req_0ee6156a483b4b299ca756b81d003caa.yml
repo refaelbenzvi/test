@@ -1,0 +1,44 @@
+_id: req_0ee6156a483b4b299ca756b81d003caa
+type: Request
+parentId: fld_509ee78dcdaf439ca36a60d34d0c1ba6
+modified: 1693486182114
+created: 1693486182114
+url: "{{ _.host }}/api/{% request 'folder', '', 0 %}/{% request 'name', '', 0 %}"
+name: searchCount
+description: Search Amount Of Internal Transfer That Has Been Found
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tabName": "internalTransfers",
+    	"filters": [],
+    	"offset": 0,
+    	"limit": 20,
+    	"orderBy": {
+    		"id": "DESC"
+    	}
+    }
+parameters: []
+headers:
+  - id: pair_e11fe91d1d1b46ac8f9a3c29c284c582
+    name: Content-Type
+    value: application/json
+  - id: pair_fc0b41ea21df45c993e134eaf03fd8cd
+    name: User-Agent
+    value: Insomnia/2023.5.5
+  - description: ""
+    id: pair_f92bdc47d77444ef8418fb1ba3654fd9
+    name: brands
+    value: -1,1,2,3,4,5,6
+authentication:
+  token: "{{ _.token }}"
+  type: bearer
+metaSortKey: -1692697478597.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
